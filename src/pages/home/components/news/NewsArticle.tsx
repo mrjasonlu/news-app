@@ -10,7 +10,11 @@ type NewsArticleProps = {
 
 const NewsArticle = ({ article }: NewsArticleProps) => {
   return (
-    <a className="border-b p-2 last:border-none" href={article.webUrl}>
+    <a
+      className="border-b p-2 last:border-none"
+      href={article.webUrl}
+      target="_blank"
+    >
       {article.webTitle} -{' '}
       <span className="text-xs">
         {format(new Date(article.webPublicationDate), 'dd/MM/yyyy')}
