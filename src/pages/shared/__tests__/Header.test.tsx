@@ -2,12 +2,12 @@ import React from 'react';
 import { render, screen } from 'utils/testUtils';
 import en from 'i18n/en/en.json';
 
-import Home from '../Home';
+import Header from '../Header';
 
-describe('Home', () => {
+describe('Header', () => {
   test('renders title', () => {
-    render(<Home />);
-    const title = screen.getByText(en.home.title);
+    render(<Header />);
+    const title = screen.getByText(en.header.title);
     expect(title).toBeInTheDocument();
   });
 });
