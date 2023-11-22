@@ -21,6 +21,8 @@ npm install
 npm start
 ```
 
+Browser should serve the app at `http://localhost:3000/`
+
 ## Running tests
 
 ```bash
