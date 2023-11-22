@@ -11,6 +11,7 @@ import Layout from './pages/shared/Layout';
 
 // styles
 import './index.css';
+import React from 'react';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -40,7 +41,9 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
 root.render(
-  <QueryClientProvider client={queryClient}>
-    <RouterProvider router={router} />
-  </QueryClientProvider>,
+  <React.StrictMode>
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
+  </React.StrictMode>,
 );
