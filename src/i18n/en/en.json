@@ -1,0 +1,14 @@
+{
+  "header": {
+    "title": "News Co."
+  },
+  "home": {
+    "title": "Welcome to News Co."
+  },
+  "news": {
+    "search_label": "Search news articles"
+  },
+  "error": {
+    "try_again": "Something went wrong. Please try again or contact support if problem persists."
+  }
+}
